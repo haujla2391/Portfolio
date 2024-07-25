@@ -1,0 +1,1 @@
+Welcome to my personal portfolio website! My name is Harman Aujla and this website is a HTML and CSS platform.
