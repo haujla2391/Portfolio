@@ -72,6 +72,63 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Give cards more breathing room */
+.box.style1 {
+    padding: 2.5em 2em;          /* was probably ~1.5–2em */
+    margin-bottom: 2em;          /* extra space between rows */
+}
+
+h3 {
+    margin: 0 0 0.8em 0;         /* tighter title spacing */
+    font-size: 1.4em;            /* slightly smaller if it feels too dominant */
+}
+
+p {
+    margin-bottom: 1.25em;       /* less space before tags */
+    line-height: 1.6;            /* easier to read */
+}
+
+/* Make tech tags less visually heavy */
+.tech-tags {
+    margin: 1.2em 0 1.5em;
+}
+.tech-badge {
+    font-size: 0.8em;
+    padding: 0.4em 0.8em;
+    margin: 0.3em;
+    background: #555;            /* darker = less eye-catching if too bright now */
+}
+.image.featured {
+    margin: 0 0 1.5em 0;
+    text-align: center;           /* helps center if needed */
+    background: #0f0f0f;          /* optional dark fallback */
+}
+
+.image.featured img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 260px;            /* ← controls how tall the images get – adjust 220–320px */
+    object-fit: contain;          /* keeps full image visible */
+    transition: transform 0.3s ease;
+}
+
+.box.style1:hover .image.featured img {
+    transform: scale(1.04);
+}
+
+.actions.stacked {
+    margin-top: 1.2em;
+}
+.actions.stacked .button {
+    margin: 0.5em 0;
+    width: 100%;
+}
+@media screen and (max-width: 736px) {
+    .tech-tags { text-align: center; }
+}
+
 /* Basic */
 
 	html {
